@@ -53,3 +53,8 @@
   border-radius: 50%;
   font-size: 12px;
 }
+.product_img img {
+  margin: 10px 10px 4px 5px;
+  width: 200px;
+  height: 150px;
+}

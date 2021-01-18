@@ -5,6 +5,7 @@ import store from "./redux/store";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
+import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Provider store={store}>
         <Nav />
         <Route path="/" exact component={Home} />
-        <Route path="about" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/cart" component={Cart} />
       </Provider>
     </Router>
   );
