@@ -6,18 +6,19 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Cart from "./components/Cart";
+import Details from './components/Details';
 
 function App() {
-  return (
-    <Router>
-      <Provider store={store}>
+    return ( <Router>
+        <Provider store = { store }>
         <Nav />
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/cart" component={Cart} />
-      </Provider>
-    </Router>
-  );
+        <Route path = "/" exact component = { Home }/> 
+        <Route path = "/about" component = { About } /> 
+        <Route path = "/cart" component = { Cart }/>  
+        <Route path="/details:id" exact component={Details} />
+        </Provider> 
+        </Router >
+    );
 }
 
 export default App;
